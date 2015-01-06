@@ -22,6 +22,8 @@ sbusr.call(method, params=[], timeout=10, addr=None)
 * int timeout: 等待 RPC 返回的超时时间，单位是秒
 * (int, int, int) addr: 向该使用该 Smartbus 地址的 sbusr 实例发送 RPC 请求。如果为  `None` ，该函数会自动选择一个可用的 sbusr 实例。该参数的三个元素分别是 `unitid`, `clientid`, `clientype`
 
+* 返回值：RPC的返回值，可能是任意JSON类型
+
 ### 例子
 
 ```python
