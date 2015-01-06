@@ -15,14 +15,12 @@ sbusr-flow-scripts
 
 ### 函数定义
 
-.. function:: sbusr.call(method, params=[], timeout=10, addr=None)
+sbusr.call(method, params=[], timeout=10, addr=None)
 
-    :param str method: RPC 方法名
-    :param params: RPC 参数
-    :type params: list or dict
-    :param int timeout: 等待 RPC 返回的超时时间，单位是秒
-    :param addr: 向该使用该 Smartbus 地址的 sbusr 实例发送 RPC 请求。如果为  `None` ，该函数会自动选择一个可用的 sbusr 实例。该参数的三个元素分别是 unitid, clientid, clientype
-    :type addr: (int, int, int)
+* str method: RPC 方法名
+* list|dict params: RPC 参数。应传入 list 或者 dict，前者表示占位参数，后者表示命名参数
+* int timeout: 等待 RPC 返回的超时时间，单位是秒
+* (int, int, int) addr: 向该使用该 Smartbus 地址的 sbusr 实例发送 RPC 请求。如果为  `None` ，该函数会自动选择一个可用的 sbusr 实例。该参数的三个元素分别是 `unitid`, `clientid`, `clientype`
 
 ### 例子
 
