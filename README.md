@@ -3,6 +3,10 @@ sbusr-flow-scripts
 
 该项目集合了可在和声 IPSC Flow 中使用的，调用 [sbusr](https://github.com/Hesong-OpenSource/sbusr) 的远程方法时，用于简化脚本的一些自定义函数
 
+# 代码库
+
+http://github.com/Hesong-OpenSource/sbusr-flow-scripts
+
 # 用法
 
 1. 将 `sbusr.fun` 复制到要使用它的流程项目的 `script` 目录
